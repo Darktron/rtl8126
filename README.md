@@ -1,15 +1,15 @@
 # rtl8126
 Driver for RTL8126 5GBps PCIe Module OpenWRT
 
-1. Download RTL8126 driver with wget:
-```
-wget -O /lib/modules/r8126.ko https://github.com/Darktron/rtl8126/raw/main/r8126.ko
-```
-
-2. Download tools with:
+1. Download tools with:
 ```
 opkg update
-opkg install kmod ethtool
+opkg install kmod ethtool wget
+```
+
+2. Download RTL8126 driver with wget:
+```
+wget -O /lib/modules/r8126.ko https://github.com/Darktron/rtl8126/raw/main/r8126.ko
 ```
 
 3. Update driver dependencies with:
