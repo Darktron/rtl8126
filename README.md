@@ -1,5 +1,5 @@
 # rtl8126
-Driver for RTL8126 5GBps PCIe Module OpenWRT (Kernel 6.6.41)
+Driver for RTL8126 5GbE PCIe Module OpenWRT (Kernel 6.6.41)
 
 1. Download tools with:
 ```
