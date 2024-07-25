@@ -6,7 +6,7 @@ Driver for RTL8126 5GBps PCIe Module OpenWRT
 wget -O /lib/modules/r8126.ko https://github.com/Darktron/rtl8126/raw/main/r8126.ko
 ```
 
-3. Download tools with:
+2. Download tools with:
 ```
 opkg update
 opkg install kmod ethtool
@@ -17,17 +17,17 @@ opkg install kmod ethtool
 depmod -a
 ```
 
-5. Load the RTL8126 driver with:
+4. Load the RTL8126 driver with:
 ```
 insmod /lib/modules/r8126.ko
 ```
 
-6. Verify the RTL8126 driver is loaded with:
+5. Verify the RTL8126 driver is loaded with:
 ```
 lsmod | grep r8126
 ```
 
-7. Check interfaces with:
+6. Check interfaces with:
 ```
 ip a
 ```
@@ -44,12 +44,12 @@ Or
 ifconfig -a
 ```
 
-8. Add the driver name to this file to ensure it loads at boot.
+7. Add the driver name to this file to ensure it loads at boot.
 ```
 echo "r8126" > /etc/modules.d/r8126
 ```
 
-9. Reboot and Verify
+8. Reboot and Verify
 Reboot the system and check if the module is loaded:
 ```
 reboot
