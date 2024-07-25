@@ -22,12 +22,12 @@ depmod -a
 insmod /lib/modules/r8126.ko
 ```
 
-7. Verify the RTL8126 driver is loaded with:
+6. Verify the RTL8126 driver is loaded with:
 ```
 lsmod | grep r8126
 ```
 
-9. Check interfaces with:
+7. Check interfaces with:
 ```
 ip a
 ```
@@ -44,12 +44,12 @@ Or
 ifconfig -a
 ```
 
-7. Add the driver name to this file to ensure it loads at boot.
+8. Add the driver name to this file to ensure it loads at boot.
 ```
 echo "r8126" > /etc/modules.d/r8126
 ```
 
-8. Reboot and Verify
+9. Reboot and Verify
 Reboot the system and check if the module is loaded:
 ```
 reboot
