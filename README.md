@@ -9,7 +9,7 @@ opkg install kmod ethtool wget
 
 2. Download RTL8126 driver with wget:
 ```
-wget -O /lib/modules/r8126.ko https://github.com/Darktron/rtl8126/raw/main/r8126.ko
+wget -O /lib/modules/$(uname -r)/r8126.ko https://github.com/Darktron/rtl8126/raw/main/r8126.ko
 ```
 
 3. Update driver dependencies with:
@@ -19,7 +19,7 @@ depmod -a
 
 4. Load the RTL8126 driver with:
 ```
-insmod /lib/modules/r8126.ko
+insmod /lib/modules/$(uname -r)/r8126.ko
 ```
 
 5. Verify the RTL8126 driver is loaded with:
